@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1f2025;
+    font-family: 'Poppins', sans-serif;
+}
+
+.book {
+    width: 92%;
+    height: 90%;
+    /* border: 1px solid #fff; */
+    display: flex;
+}
+
+.book .left , .right {
+    width: 80%;
+    position: relative;
+    height: 100%;
+    border: 1px solid #fff;
+}
+
+.book .left {
+    width: 20%;
+}
+
+.book .left img {
+    width: 100%;
+}
+
+.book .left .play {
+    position: relative;
+    left: 44%;
+    top: -25px;
+    background: #fd6565;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0px 0px 20px #fd6565;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.book .left .play:hover {
+    transform: rotate(360deg);
+}
+
+.book .left .cont {
+    color: #fff;
+    padding: 0 20px;
+}
+
+.book .left .cont h6 {
+    font-size: 13px;
+}
+
+.book .left .cont p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.book .right {
+    padding: 10px 40px;
+    background: unset;
+}
+
+.book .right::before {
+    position: absolute;
+    content: '';
+    width: 95%;
+    height: 250px;
+    /* border: 1px solid #fff; */
+    background: url(scene/Venom.jpg)no-repeat center -30px/cover;
+    z-index: -10;
+    border-radius: 20px;
+}
